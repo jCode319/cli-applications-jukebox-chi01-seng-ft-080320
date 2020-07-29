@@ -61,10 +61,12 @@ def run(songs)
   puts "Please enter a command:"
   user_input = gets.strip
 
-  if user_input == "exit"
-    puts "Goodbye"
-    
+  while user_input != "exit"
+    if user_input == "help"
+
   end
+  
+  puts "Goodbye"
 end
 
 #The play command should ask a user to input a song name or track number. It should then output the appropriate song name.
