@@ -63,9 +63,8 @@ def run(songs)
 
   while user_input != "exit"
     if user_input == "help"
-
   end
-  
+end
   puts "Goodbye"
 end
 
