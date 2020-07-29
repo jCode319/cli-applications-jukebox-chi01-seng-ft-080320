@@ -61,7 +61,7 @@ def run(songs)
   until user_input == "exit" do
     puts "Please enter a command:"
     user_input = gets.strip
-    
+
     when user_input == "list"
       list(songs)
 
