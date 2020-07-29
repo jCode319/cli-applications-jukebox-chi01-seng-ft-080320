@@ -62,10 +62,10 @@ def run(songs)
     user_input = gets.strip
 
     case user_input
-    when user_input == "list"
-      list(songs)
     when user_input == "help"
       help
+    when user_input == "list"
+      list(songs)
     when user_input == "play"
       play(songs)
     else
