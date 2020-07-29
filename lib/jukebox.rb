@@ -57,17 +57,17 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run(songs
+def run(songs)
   help
   puts "Please enter a command:"
   user_input = gets.strip
 
   case user_input
-    when user_input == "help"
-      help
-    when user_input == "list"
+    when "help"
+      help()
+    when "list"
       list(songs)
-    when user_input == "play"
+    when "play"
       play(songs)
     else
       exit_jukebox
