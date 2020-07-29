@@ -61,11 +61,19 @@ def run(songs)
   puts "Please enter a command:"
   user_input = gets.strip
 
-  while user_input != "exit"
-    if user_input == "help"
+  until user_input == "exit" do
+    
+    when user_input == "list"
+      list(songs)
+
+    when user_input == "play"
+      play(songs)
+  
+    when user_input == "help"
+      help 
+    end
   end
-end
-  puts "Goodbye"
+  exit_jukebox
 end
 
 #The play command should ask a user to input a song name or track number. It should then output the appropriate song name.
