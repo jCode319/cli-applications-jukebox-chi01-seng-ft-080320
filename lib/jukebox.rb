@@ -62,15 +62,15 @@ def run(songs)
   user_input = gets.strip
 
   until user_input == "exit" do
-    
+
     when user_input == "list"
       list(songs)
 
     when user_input == "play"
       play(songs)
-  
+
     when user_input == "help"
-      help 
+      help
     end
   end
   exit_jukebox
