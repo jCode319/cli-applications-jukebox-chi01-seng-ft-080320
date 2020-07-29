@@ -70,8 +70,8 @@ def run(songs)
       play(songs)
     else
       exit_jukebox
-    end
   end
 end
+
 
 #The play command should ask a user to input a song name or track number. It should then output the appropriate song name.
